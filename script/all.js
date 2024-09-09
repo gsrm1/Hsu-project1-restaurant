@@ -4,6 +4,10 @@ $(document).ready(function () {
       e.preventDefault();
       $('.nav').toggleClass('menu-show');
     });
+
+    $('.article4 .content2 .buttons .span2').click(function (e) { 
+      alert('食神已收到您的訂位，請靜候專員與您聯絡！（當然沒有XD）');
+    });
     
     // myFav-icon (fontAwesome偽元素)點擊切換icon
     $('.myFav-icon i').click(function (e) { 
