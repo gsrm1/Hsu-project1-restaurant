@@ -394,6 +394,9 @@ input:focus{
     border: 1px solid transparent;
     border-radius: 3px;
 }
+.article4 .content2 .buttons input:hover{
+    cursor: pointer;
+}
 .article4 .content2 .buttons .span1{
     color: white;
     background-color: rgb(160, 158, 158);
