@@ -302,6 +302,7 @@ input:focus{
 }
 .article2 img{
     max-width: 100%;
+    display: block;
 }
 .article2 .content2{
     padding: 10px 0px;
@@ -508,6 +509,10 @@ input:focus{
     top: 2%;
     left: 2%;
     cursor: pointer;
+}
+/* 使用jQ切換我的最愛icon樣式 */
+.myFav-icon-active{
+    font-weight: bold;
 }
 .food-order .food-list .sub-content img{
     width: 100%;

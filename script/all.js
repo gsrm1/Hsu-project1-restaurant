@@ -9,10 +9,10 @@ $(document).ready(function () {
       alert('食神已收到您的訂位，請靜候專員與您聯絡！（當然沒有XD）');
     });
     
-    // myFav-icon (fontAwesome偽元素)點擊切換icon
+    // myFav-icon (fontAwesome偽元素)切換icon樣式
     $('.myFav-icon i').click(function (e) { 
       e.preventDefault();
-      $(this).toggleClass('fa-brands fa-gratipay');
+      $(this).toggleClass('myFav-icon-active');
     });
    
     // goToTop icon 使用捲動百分比顯示按鈕
