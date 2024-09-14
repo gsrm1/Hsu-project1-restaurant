@@ -1,0 +1,11 @@
+@import "variable"; //全域變數
+@import "reset"; //css reset
+@import "mixin"; //mixin儲存庫
+@import "layout"; //共同框架, 第一層
+@import "index"; //首頁
+@import "food_order"; //內頁1
+@import "login"; //內頁2
+@import "register"; //內頁3
+
+/* 取消@import導入字型（改在head中用link導入，加速css載入速度）
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap'); */
