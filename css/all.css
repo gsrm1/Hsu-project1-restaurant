@@ -97,7 +97,7 @@ table {
 /* layout header start */
 .header {
   height: 420px;
-  background-image: url(/../images/header_desktop.png);
+  background-image: url(images/header_desktop.png);
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid transparent;
@@ -184,7 +184,7 @@ table {
 
 @media (max-width: 430px) {
   .header {
-    background-image: url(/../images/header_mobile.png);
+    background-image: url(images/header_mobile.png);
   }
   .logo h1 {
     margin: 15px;
