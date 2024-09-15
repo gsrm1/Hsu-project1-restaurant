@@ -71,6 +71,9 @@
     }
     .menu-hamburgerIcon{
         display: none;
+        a{
+            color: white;
+        }
     }
     @include header-iphone14ProMax(){
 
