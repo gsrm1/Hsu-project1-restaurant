@@ -28,11 +28,28 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 body {
+	color: #3D1101;
+    font-size: 16px;
+    font-weight: 100;
+    font-family:  "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
 	line-height: 1;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: #3D1101;
 }
 ol, ul {
 	list-style: none;
+}
+button{
+    cursor: pointer;
 }
 blockquote, q {
 	quotes: none;
@@ -42,8 +59,21 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+i{
+    font-style: italic;
+    font-weight: 600;
+}
+input:hover{
+    box-shadow: 0 0 10px rgb(249, 218, 160);
+}
+input:focus{
+    background-color: rgb(249, 218, 160);
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
