@@ -39,6 +39,7 @@
 .article1 .content2 img{
     border-radius: 50%;
     max-width: 100%;
+    height: auto;
 }
 .article1 .content2 h4{
     margin: 20px 0px 10px 0px;
@@ -77,6 +78,7 @@
 }
 .article2 img{
     max-width: 100%;
+    height: auto;
     display: block;
 }
 .article2 .content2{
@@ -106,6 +108,9 @@
 .article3 img{
     border-radius: 50%;
     margin-right: 10px;
+    width: auto;
+    height: auto;
+    
 }
 .article3 .content1{
     font-size: 1.5em;

@@ -97,7 +97,7 @@ table {
 /* layout header start */
 .header {
   height: 420px;
-  background-image: url(images/header_desktop.png);
+  background-image: url(/images/header_desktop.png);
   background-position: center center;
   background-repeat: no-repeat;
   border: 1px solid transparent;
@@ -184,7 +184,7 @@ table {
 
 @media (max-width: 430px) {
   .header {
-    background-image: url(images/header_mobile.png);
+    background-image: url(/images/header_mobile.png);
   }
   .logo h1 {
     margin: 15px;
@@ -352,6 +352,7 @@ table {
 .article1 .content2 img {
   border-radius: 50%;
   max-width: 100%;
+  height: auto;
 }
 
 .article1 .content2 h4 {
@@ -395,6 +396,7 @@ table {
 
 .article2 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -427,6 +429,8 @@ table {
 .article3 img {
   border-radius: 50%;
   margin-right: 10px;
+  width: auto;
+  height: auto;
 }
 
 .article3 .content1 {
