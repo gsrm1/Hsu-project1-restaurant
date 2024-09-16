@@ -96,6 +96,7 @@ table {
   background-image: url(https://gsrm1.github.io/Hsu-project1-restaurant/images/header_desktop.png);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: 1049px 420px;
   border: 1px solid transparent;
 }
 .header .nav {
@@ -164,13 +165,12 @@ table {
 }
 .header .menu-hamburgerIcon {
   display: none;
-}
-.header .menu-hamburgerIcon a {
   color: white;
 }
 @media (max-width: 430px) {
   .header {
     background-image: url(https://gsrm1.github.io/Hsu-project1-restaurant/images/header_mobile.png);
+    background-size: 600px 420px;
   }
   .header h1 {
     margin: 15px;
@@ -202,6 +202,9 @@ table {
     top: 10px;
     right: 20px;
     display: block;
+  }
+  .header .menu-hamburgerIcon a {
+    color: white;
   }
   .header .content h3 {
     font-size: 1.9em;
@@ -296,13 +299,10 @@ table {
   line-height: 32px;
   text-align: center;
 }
-
-/* 用:before :after添加左右橫線效果 */
-.article1 .content1 span {
+.article1 .content1 span { /* 用:before :after添加左右橫線效果 start*/
   display: block;
   position: relative;
 }
-
 .article1 .content1 span:before, .article1 .content1 span:after {
   content: " ";
   position: absolute;
@@ -311,46 +311,35 @@ table {
   width: 10%;
   height: 1px;
 }
-
 .article1 .content1 span:before {
   left: 28%;
 }
-
 .article1 .content1 span:after {
-  right: 28%;
+  right: 28%; /* 用:before :after畫左右橫線中間文字效果 end*/
 }
-
-/* 用:before :after畫左右橫線中間文字效果 end*/
 .article1 .content2 > ul {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-bottom: 50px;
 }
-
 .article1 .content2 .sub-content {
   width: 25%;
 }
-
-/* 消除圖片四角背色*/
-.article1 .content2 img {
+.article1 .content2 img { /* 消除圖片四角背色*/
   border-radius: 50%;
   max-width: 100%;
   height: auto;
 }
-
 .article1 .content2 h4 {
   margin: 20px 0px 10px 0px;
   font-size: 1.125em;
 }
-
 .article1 .content2 p {
   text-align: left;
 }
-
 @media (max-width: 430px) {
-  /* 取消畫左右橫線中間文字效果 */
-  .article1 .content1 span:before, .article1 .content1 span:after {
+  .article1 .content1 span:before, .article1 .content1 span:after { /* 取消畫左右橫線中間文字效果 */
     display: none;
   }
   .article1 .content2 > ul {
@@ -362,135 +351,107 @@ table {
     margin-bottom: 30px;
   }
 }
+
 /* index article1 end */
 /* index article2 start*/
 .article2 {
   background-color: #3D1101;
 }
-
 .article2 ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
-.article2 li {
+.article2 ul li {
   width: 45%;
 }
-
 .article2 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
 .article2 .content2 {
   padding: 10px 0px;
   color: #EFE9E7;
 }
-
 .article2 .content2 h4 {
   font-size: 1.25em;
   margin-bottom: 16px;
 }
-
 @media (max-width: 430px) {
   .article2 ul {
     flex-direction: column;
   }
-  .article2 li {
+  .article2 ul li {
     width: 80%;
   }
 }
+
 /* index article2 end */
 /* index article3 start*/
 .article3 {
   padding: 35px 0px;
   background-color: rgb(239, 233, 231);
 }
-
-/* 消除圖片四角背色*/
-.article3 img {
+.article3 img { /* 消除圖片四角背色*/
   border-radius: 50%;
   margin-right: 10px;
   width: auto;
   height: auto;
 }
-
 .article3 .content1 {
   font-size: 1.5em;
   text-align: center;
 }
-
 .article3 .content2 > ul {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
 }
-
 .article3 .content2 .sub-content {
   width: 30%;
 }
-
 .article3 .content2 .sub-content ul {
   display: flex;
 }
-
 .article3 .content2 .sub-content h4 {
   font-size: 1.15em;
   margin-bottom: 20px;
 }
-
 .article3 .content2 .sub-content span {
   display: block;
   text-align: right;
 }
-
 @media (max-width: 430px) {
-  .article3 .content2 .sub-content {
-    width: 90%;
-  }
   .article3 .content2 > ul {
     flex-wrap: wrap;
   }
+  .article3 .content2 .sub-content {
+    width: 90%;
+  }
 }
+
 /* index article3 end */
 /* index article4 start*/
 .article4 {
   padding: 35px 10px;
 }
-
 .article4 .content1 {
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 38px;
 }
-
 .article4 .content2 > ul {
   display: flex;
   justify-content: space-evenly;
 }
-
 .article4 .content2 .sub-content {
   width: 49%;
 }
-
-.article4 label {
-  margin-bottom: 10px;
-}
-
-.article4 .form-inputs input {
-  display: block;
-  margin: 10px 0px;
-  width: 100%;
-  height: 32px;
-}
-
 .article4 .content2 .buttons {
   margin-top: 30px;
   float: right;
 }
-
 .article4 .content2 .buttons input {
   width: 70px;
   height: 32px;
@@ -498,25 +459,30 @@ table {
   border: 1px solid transparent;
   border-radius: 3px;
 }
-
 .article4 .content2 .buttons input:hover {
   cursor: pointer;
+  background-color: blue;
 }
-
+.article4 .content2 .buttons input:active {
+  background-color: green;
+}
 .article4 .content2 .buttons .span1 {
   color: white;
   background-color: rgb(160, 158, 158);
 }
-
 .article4 .content2 .buttons .span2 {
   color: white;
   background-color: rgb(243, 108, 49);
 }
-
-.article4 .content2 .buttons input:active {
-  background-color: green;
+.article4 label {
+  margin-bottom: 10px;
 }
-
+.article4 .form-inputs input {
+  display: block;
+  margin: 10px 0px;
+  width: 100%;
+  height: 32px;
+}
 @media (max-width: 430px) {
   .article4 .content2 > ul {
     flex-direction: column;
@@ -529,92 +495,75 @@ table {
     width: 98%;
   }
 }
+
 /* index article4 end*/
 /* Page2 food-order start */
 .food-order {
   display: flex;
   padding: 40px;
 }
-
 .food-order .food-menu {
   width: 20%;
   margin-right: 20px;
 }
-
 .food-order .food-menu h2 {
   font-size: 1.25em;
   line-height: 32px;
 }
-
 .food-order .food-menu li {
   border-bottom: 1px solid #3D1101;
   line-height: 32px;
 }
-
 .food-order .food-menu li a:hover {
   cursor: pointer;
   color: white;
   background-color: rgb(60, 17, 3);
 }
-
 .food-order .food-menu .style a {
   color: white;
   background-color: rgb(60, 17, 3);
 }
-
 .food-order .container {
   width: 90%;
 }
-
 .food-order .search-and-cart {
   margin-bottom: 5px;
 }
-
 .food-order .search-and-cart ul {
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
 }
-
 .food-order .search-and-cart .search {
   width: 70%;
 }
-
 .food-order .search-and-cart .search input {
   width: 85%;
   border: 2px solid #3D1101;
 }
-
 .food-order .search-and-cart .search button {
   background-color: #3D1101;
   border: 2px solid #3D1101;
 }
-
 .food-order .search-and-cart .search button:hover {
   background-color: orange;
 }
-
 .food-order .search-and-cart .cart li {
   padding: 0px 10px;
 }
-
-.food-order .search-and-cart .cart a {
-  line-height: 1.5em;
-}
-
 .food-order .search-and-cart .cart li:hover {
   background-color: orange;
 }
-
+.food-order .search-and-cart .cart a {
+  line-height: 1.5em;
+}
 .food-order .search-and-cart .cart .style {
   border-right: 1px solid #000;
 }
-
 .food-order .food-list ul {
   display: flex;
   flex-wrap: wrap;
 }
-
 .food-order .food-list .sub-content {
   width: 31%;
   position: relative;
@@ -622,7 +571,6 @@ table {
   margin: 0px 10px 10px 0px;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
 }
-
 .food-order .food-list .sub-content .myFav-icon {
   position: absolute;
   font-size: 1.5em;
@@ -630,29 +578,25 @@ table {
   left: 2%;
   cursor: pointer;
 }
-
-/* 使用jQ切換我的最愛icon樣式 */
-.myFav-icon-active {
+.food-order .food-list .sub-content .myFav-icon-active {
+  /* 使用jQ切換我的最愛icon樣式 */
   font-weight: bold;
 }
-
 .food-order .food-list .sub-content img {
   width: 100%;
+  height: auto;
 }
-
 .food-order .food-list .sub-content h4 {
   font-size: 1.25em;
   margin: 20px 0px;
 }
-
-/* 用:before添加下方橫線效果 */
 .food-order .food-list .sub-content h4 span {
   font-size: 0.75em;
   display: block;
   position: relative;
 }
-
 .food-order .food-list .sub-content h4 span:before {
+  /* 用:before添加下方橫線效果 */
   content: " ";
   position: absolute;
   right: 35%;
@@ -661,12 +605,9 @@ table {
   width: 30%;
   height: 2px;
 }
-
-/* 用:before添加下方橫線效果 end*/
 .food-order .food-list .sub-content p {
   margin-bottom: 10px;
 }
-
 .food-order .food-list .sub-content button {
   width: 90%;
   border: 2px solid #f55b19;
@@ -674,13 +615,11 @@ table {
   color: #f55b19;
   background-color: #fff;
 }
-
 .food-order .food-list .sub-content button:hover {
   color: white;
   background-color: #f55b19;
   box-shadow: 0 0 2px 2px green;
 }
-
 @media (max-width: 768px) {
   .food-order .search-and-cart ul {
     margin-right: 0px;
@@ -691,61 +630,64 @@ table {
   .food-order .food-menu h2 {
     font-size: 1em;
   }
+  .food-order .food-menu h3 {
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 430px) {
   .food-order {
     flex-direction: column;
   }
-  .food-order .food-menu, .food-order .container {
+  .food-order .food-menu {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .food-order .container {
     width: 100%;
   }
   .food-order .container .search-and-cart > ul {
     flex-direction: column;
     align-items: end;
   }
-  .food-order .search-and-cart .search {
+  .food-order .container .search-and-cart .search {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .food-order .search-and-cart .search input {
+  .food-order .container .search-and-cart .search input {
     width: 87%;
   }
   .food-order .food-list .sub-content {
     width: 100%;
   }
 }
+
 /* Page2 food-order end */
 /* Page3 login start */
 .login {
   width: 300px;
   margin: 50px auto;
 }
-
 .login .title {
   text-align: center;
   border-bottom: 3px solid rgb(243, 108, 49);
 }
-
 .login .title h2 {
   font-size: 3em;
   font-weight: 500;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 5px;
 }
-
 .login .title h3 {
   font-size: 1.25em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 35px;
 }
-
 .login .login-inputs {
   padding: 15px;
   box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
 }
-
 .login .login-inputs .forgot-password {
   margin-top: 5px;
   font-size: 0.85em;
@@ -753,20 +695,17 @@ table {
   font-weight: 300;
   margin-bottom: 30px;
 }
-
 .login .login-inputs h4 {
   text-align: center;
   font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 16px;
 }
-
-/* 在input中加入Fontawesome icon start*/
 .login .login-inputs .mail-box {
+  /* 在input中加入Fontawesome icon start*/
   position: relative;
   margin-bottom: 15px;
 }
-
 .login .login-inputs .mail-box input {
   text-indent: 20px;
   width: 270px;
@@ -775,17 +714,14 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-
 .login .login-inputs .mail-box i {
   position: absolute;
   top: 11px;
   left: 5px;
 }
-
 .login .login-inputs .password-box {
   position: relative;
 }
-
 .login .login-inputs .password-box input {
   text-indent: 20px;
   width: 270px;
@@ -794,31 +730,26 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-
 .login .login-inputs .password-box i {
   position: absolute;
   top: 11px;
   left: 5px;
+  /* 在input中加入Fontawesome icon end*/
 }
-
-/* 在input中加入Fontawesome icon end*/
 .login .input-buttons {
   display: flex;
   justify-content: space-between;
 }
-
 .login .input-buttons button {
   width: 125px;
   height: 32px;
   color: white;
   border-radius: 5px;
 }
-
 .login .input-buttons .to-register {
   border: 1px solid rgb(155, 151, 150);
   background-color: rgb(155, 151, 150);
 }
-
 .login .input-buttons .submit {
   border: 1px solid rgb(243, 108, 49);
   background-color: rgb(243, 108, 49);
@@ -830,31 +761,26 @@ table {
   max-width: 620px;
   margin: 50px auto;
 }
-
 .register .title {
   text-align: center;
   border-bottom: 3px solid rgb(243, 108, 49);
 }
-
 .register .title h2 {
   font-size: 3em;
   font-weight: 500;
   font-family: "Noto Sans TC";
   margin-bottom: 5px;
 }
-
 .register .title h3 {
   font-size: 1.25em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 35px;
 }
-
 .register .container {
   padding: 15px;
   box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
 }
-
 .register .container .got-account {
   margin-top: 5px;
   margin-bottom: 30px;
@@ -862,34 +788,28 @@ table {
   color: rgb(243, 108, 49);
   font-weight: 300;
 }
-
 .register .container h4 {
   text-align: center;
   font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 16px;
 }
-
 .register .container h5 {
   font-size: 1.125em;
   font-weight: 400;
   margin-bottom: 10px;
 }
-
 .register .content {
   display: flex;
 }
-
 .register .content .sub-content {
   width: 50%;
 }
-
-/* 在input中加入Fontawesome icon start*/
 .register .login-inputs .mail-box {
+  /* 在input中加入Fontawesome icon start*/
   position: relative;
   margin-bottom: 15px;
 }
-
 .register .login-inputs .mail-box input {
   display: block;
   text-indent: 20px;
@@ -899,17 +819,14 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-
 .register .login-inputs .mail-box i {
   position: absolute;
-  top: 11px;
+  top: 8px;
   left: 5px;
 }
-
 .register .login-inputs .password-box {
   position: relative;
 }
-
 .register .login-inputs .password-box input {
   display: block;
   text-indent: 20px;
@@ -919,24 +836,20 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-
 .register .login-inputs .password-box i {
   position: absolute;
-  top: 11px;
+  top: 7px;
   left: 5px;
 }
-
 .register .login-inputs .password-box .icon2 {
   position: absolute;
-  top: 45px;
+  top: 42px;
   left: 5px;
+  /* 在input中加入Fontawesome icon end*/
 }
-
-/* 在input中加入Fontawesome icon end*/
 .register .input-buttons {
   float: right;
 }
-
 .register .input-buttons .register-btn {
   width: 125px;
   height: 32px;
@@ -945,11 +858,9 @@ table {
   border: 1px solid rgb(243, 108, 49);
   background-color: rgb(243, 108, 49);
 }
-
-.register .input-buttons a {
+.register .input-buttons .register-btn a {
   display: inline-block;
 }
-
 @media (max-width: 430px) {
   .register .title {
     margin: 0 auto;
@@ -967,6 +878,7 @@ table {
     margin-bottom: 20px;
   }
 }
+
 /* Page4 register end */
 /* 取消@import導入字型（改在head中用link導入，加速css載入速度）
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap'); *//*# sourceMappingURL=all.css.map */

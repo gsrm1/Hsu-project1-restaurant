@@ -2,158 +2,135 @@
 .food-order{
     display: flex;
     padding: 40px;
-}
-.food-order .food-menu{
-    width: 20%;
-    margin-right: 20px;
-}
-.food-order .food-menu h2{
-    font-size: 1.25em;
-    line-height: 32px;
-}
-.food-order .food-menu li{
-    border-bottom: 1px solid #3D1101;
-    line-height: 32px;
-}
-.food-order .food-menu li a:hover{
-    cursor: pointer;
-    color: white;
-    background-color: rgb(60, 17, 3);
-}
-.food-order .food-menu .style a{
-    color: white;
-    background-color: rgb(60, 17, 3);
-}
-.food-order .container{
-    width: 90%;
-}
-.food-order .search-and-cart{
-    margin-bottom: 5px;
-}
-.food-order .search-and-cart ul{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-}
-.food-order .search-and-cart .search{
-    width: 70%;
-}
-.food-order .search-and-cart .search input{
-    width: 85%;
-    border: 2px solid #3D1101;
-}
-.food-order .search-and-cart .search button{
-    background-color: #3D1101;
-    border: 2px solid #3D1101;
-}
-.food-order .search-and-cart .search button:hover{
-    background-color: orange;
-}
-.food-order .search-and-cart .cart li{
-    padding: 0px 10px;
-}
-.food-order .search-and-cart .cart a{
-    line-height: 1.5em;
-}
-.food-order .search-and-cart .cart li:hover{
-    background-color: orange;
-}
-.food-order .search-and-cart .cart .style{
-    border-right: 1px solid #000;
-}
-.food-order .food-list ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-.food-order .food-list .sub-content{
-    width: 31%;
-    position: relative;
-    text-align: center;
-    margin: 0px 10px 10px 0px;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
-}
-.food-order .food-list .sub-content .myFav-icon{
-    position: absolute;
-    font-size: 1.5em;
-    top: 2%;
-    left: 2%;
-    cursor: pointer;
-}
-/* 使用jQ切換我的最愛icon樣式 */
-.myFav-icon-active{
-    font-weight: bold;
-}
-.food-order .food-list .sub-content img{
-    width: 100%;
-}
-.food-order .food-list .sub-content h4{
-    font-size: 1.25em;
-    margin: 20px 0px;
-}
-/* 用:before添加下方橫線效果 */
-.food-order .food-list .sub-content h4 span{
-    font-size: 0.75em;
-    display: block;
-    position: relative;
-}
-.food-order .food-list .sub-content h4 span:before{
-    content: " ";
-    position: absolute;
-    right: 35%;
-    bottom: -70%;
-    background: #3D1101;
-    width: 30%;
-    height: 2px;
-}
-/* 用:before添加下方橫線效果 end*/
-.food-order .food-list .sub-content p{
-    margin-bottom: 10px;
-}
-.food-order .food-list .sub-content button{
-    width: 90%;
-    border: 2px solid #f55b19;
-    margin-bottom: 10px;
-    color: #f55b19;
-    background-color: #fff;
-}
-.food-order .food-list .sub-content button:hover{
-    color: white;
-    background-color: #f55b19;
-    box-shadow: 0 0 2px 2px green;
-}
+    .food-menu{
+        width: 20%;
+        margin-right: 20px;
+        h2{
+            font-size: 1.25em;
+            line-height: 32px;
+        }
+        li{
+            border-bottom: 1px solid #3D1101;
+            line-height: 32px;
+            a:hover{
+                cursor: pointer;
+                color: white;
+                background-color: rgb(60, 17, 3);
+            }
+        }
+        .style{
+            a{
+                color: white;
+                background-color: rgb(60, 17, 3);
+            }
+        }
+    }
+    .container{
+        width: 90%;
+    }
+    .search-and-cart{
+        margin-bottom: 5px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        .search{
+            width: 70%;
+            input{
+                width: 85%;
+                border: 2px solid #3D1101;
+            }
+            button{
+                background-color: #3D1101;
+                border: 2px solid #3D1101;
+            }
+            button:hover{
+                background-color: orange;
+            }
+        }
+        .cart{
+            li{
+                padding: 0px 10px;
+            }
+            li:hover{
+                background-color: orange;
+            }
+            a{
+                line-height: 1.5em;
+            }
+            .style{
+                border-right: 1px solid #000;
+            }
+        }
+    }
+    .food-list{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sub-content{
+            width: 31%;
+            position: relative;
+            text-align: center;
+            margin: 0px 10px 10px 0px;
+            box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.2);
+            .myFav-icon{
+                position: absolute;
+                font-size: 1.5em;
+                top: 2%;
+                left: 2%;
+                cursor: pointer;
+            }
+            .myFav-icon-active{
+                /* 使用jQ切換我的最愛icon樣式 */
+                font-weight: bold;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            h4{
+                font-size: 1.25em;
+                margin: 20px 0px;
+                span{
+                    font-size: 0.75em;
+                    display: block;
+                    position: relative;
+                }
+                span:before{
+                    /* 用:before添加下方橫線效果 */
+                    content: " ";
+                    position: absolute;
+                    right: 35%;
+                    bottom: -70%;
+                    background: #3D1101;
+                    width: 30%;
+                    height: 2px;
+                }
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            button{
+                width: 90%;
+                border: 2px solid #f55b19;
+                margin-bottom: 10px;
+                color: #f55b19;
+                background-color: #fff;
+            }
+            button:hover{
+                color: white;
+                background-color: #f55b19;
+                box-shadow: 0 0 2px 2px green;
+            }
+        }
+    }
+@include foodOrder-ipad(){
 
-@media (max-width: 768px) {
-    .food-order .search-and-cart ul{
-        margin-right: 0px;
-    }
-    .food-order .food-list .sub-content{
-        width: 48%;
-    }
-    .food-order .food-menu h2{
-        font-size: 1em;
-    }
 }
-@media (max-width: 430px) {
-    .food-order{
-        flex-direction: column;
-    }
-    .food-order .food-menu, .food-order .container{
-        width: 100%;
-    }
-    .food-order .container .search-and-cart > ul{
-        flex-direction: column;
-        align-items: end;
-    }
-    .food-order .search-and-cart .search{
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .food-order .search-and-cart .search input{
-        width: 87%;
-    }
-    .food-order .food-list .sub-content{
-        width: 100%;
-    }
+@include foodOrder-iphone14ProMax(){
+
+}
 }
 /* Page2 food-order end */

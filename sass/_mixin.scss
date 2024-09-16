@@ -1,6 +1,7 @@
 @mixin header-iphone14ProMax{
     @media (max-width: 430px) {
         background-image: url(https://gsrm1.github.io/Hsu-project1-restaurant/images/header_mobile.png);
+        background-size: 600px 420px;
         h1{
             margin: 15px;
             font-size: 1.2em;
@@ -34,6 +35,9 @@
             top: 10px;
             right: 20px;
             display: block;
+            a{
+                color: white;
+            }
         }
         .content{
             h3{
@@ -70,3 +74,150 @@
     @content
     }
 };
+@mixin index-article1-iphone14ProMax{
+    @media (max-width: 430px) {
+        .content1 span:before, .content1 span:after {/* 取消畫左右橫線中間文字效果 */
+            display: none;
+        }
+        .content2{
+            > ul{
+                flex-wrap: wrap;
+                margin-bottom: 0px;
+            }
+            .sub-content{
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+    @content
+    }
+};
+@mixin index-article2-iphone14ProMax{
+    @media (max-width: 430px) {
+        ul{
+            flex-direction: column;
+            li{
+                width: 80%;
+            }
+        }
+    @content
+    }
+};
+@mixin index-article3-iphone14ProMax{
+    @media (max-width: 430px) {
+        .content2{
+            > ul{
+                flex-wrap: wrap;
+            }
+            .sub-content{
+                width: 90%;
+           }
+        }
+    @content
+    }
+};
+@mixin index-article4-iphone14ProMax{
+    @media (max-width: 430px) {
+        .content2{
+            > ul{
+                flex-direction: column;
+            }
+            .map{
+                height: 386px;
+                margin-bottom: 10px;
+            }
+            .sub-content{
+                width: 98%;
+            }
+        } 
+    @content
+    }
+};
+
+@mixin foodOrder-ipad{
+    @media (max-width: 768px) {
+        .search-and-cart{
+            ul{
+                margin-right: 0px;
+            }
+        } 
+        .food-list{
+            .sub-content{
+                width: 48%;
+            }
+        } 
+        .food-menu{
+            h2{
+                font-size: 1em;
+            }
+            h3{
+                font-size: 0.8em;
+            }
+        }
+    @content
+    }
+};
+
+@mixin foodOrder-iphone14ProMax{
+    @media (max-width: 430px) {
+        flex-direction: column;
+        .food-menu{
+            width: 100%;
+            font-size: 1.3em;
+        }
+        .container{
+            width: 100%;
+            .search-and-cart{
+                > ul{
+                    flex-direction: column;
+                    align-items: end;
+                }
+                .search{
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    input{
+                        width: 87%;
+                    }
+                }
+            }
+        }
+        .food-list{
+            .sub-content{
+                width: 100%;
+            }
+        }
+    @content
+    }
+};
+
+@mixin register-iphone14ProMax{
+    @media (max-width: 430px) {
+        .title{
+            margin: 0 auto;
+            max-width: 320px;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 320px;
+        }
+        .content{
+            flex-direction: column;
+        }
+        .content{
+            .sub-content{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        } 
+    @content
+    }
+
+}
+
+
+
+
+
+
+

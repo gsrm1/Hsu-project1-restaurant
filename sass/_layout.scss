@@ -4,6 +4,7 @@
     background-image: url(https://gsrm1.github.io/Hsu-project1-restaurant/images/header_desktop.png);
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 1049px 420px;
     border: 1px solid transparent;
     .nav{
         max-width: 1024px;
@@ -71,9 +72,7 @@
     }
     .menu-hamburgerIcon{
         display: none;
-        a{
-            color: white;
-        }
+        color: white;
     }
     @include header-iphone14ProMax(){
 
