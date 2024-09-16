@@ -74,6 +74,11 @@
         display: none;
         color: white;
     }
+    // jQ用展開menu
+    .menu-show .menu ul{
+        max-height: 100px;
+        color: white;
+    }
     @include header-iphone14ProMax(){
 
     }

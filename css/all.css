@@ -167,6 +167,10 @@ table {
   display: none;
   color: white;
 }
+.header .menu-show .menu ul {
+  max-height: 100px;
+  color: white;
+}
 @media (max-width: 430px) {
   .header {
     background-image: url(https://gsrm1.github.io/Hsu-project1-restaurant/images/header_mobile.png);
@@ -187,9 +191,6 @@ table {
     transition: max-height 1.5s;
     z-index: 100;
     background-color: hsla(0, 0%, 0%, 0.7);
-  }
-  .header .menu-show .menu ul {
-    max-height: 100px;
   }
   .header .menu-hamburgerIcon {
     position: absolute;
