@@ -128,22 +128,20 @@ table {
   width: 60px;
   text-align: center;
   line-height: 56px;
-}
-.header .nav ul li h2 {
   font-size: 1em;
   font-weight: 500;
 }
-.header .nav ul li h2 a {
+.header .nav ul li a {
   color: #FFFFFF;
   width: 60px;
   text-align: center;
   line-height: 56px;
 }
-.header .nav ul li h2 a:hover {
+.header .nav ul li:hover {
   background-color: orange;
   transition: 0.3s;
 }
-.header .nav ul li h2 span {
+.header .nav ul li span {
   font-size: 0.8em;
 }
 .header .content {
@@ -257,8 +255,6 @@ table {
 .footer .content3 .share-icon ul {
   display: flex;
   justify-content: flex-end;
-}
-.footer .content3 .share-icon ul li {
   margin-left: 10px;
   font-size: 2em;
 }
@@ -670,45 +666,47 @@ table {
   width: 300px;
   margin: 50px auto;
 }
-.login .title {
+
+.title {
   text-align: center;
   border-bottom: 3px solid rgb(243, 108, 49);
 }
-.login .title h2 {
+.title h2 {
   font-size: 3em;
   font-weight: 500;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 5px;
 }
-.login .title h3 {
+.title h3 {
   font-size: 1.25em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 35px;
 }
-.login .login-inputs {
+
+.login-inputs {
   padding: 15px;
   box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
 }
-.login .login-inputs .forgot-password {
+.login-inputs .forgot-password {
   margin-top: 5px;
   font-size: 0.85em;
   color: rgb(243, 108, 49);
   font-weight: 300;
   margin-bottom: 30px;
 }
-.login .login-inputs h4 {
+.login-inputs h4 {
   text-align: center;
   font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 16px;
 }
-.login .login-inputs .mail-box {
+.login-inputs .mail-box {
   /* 在input中加入Fontawesome icon start*/
   position: relative;
   margin-bottom: 15px;
 }
-.login .login-inputs .mail-box input {
+.login-inputs .mail-box input {
   text-indent: 20px;
   width: 270px;
   height: 32px;
@@ -716,15 +714,15 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-.login .login-inputs .mail-box i {
+.login-inputs .mail-box i {
   position: absolute;
   top: 11px;
   left: 5px;
 }
-.login .login-inputs .password-box {
+.login-inputs .password-box {
   position: relative;
 }
-.login .login-inputs .password-box input {
+.login-inputs .password-box input {
   text-indent: 20px;
   width: 270px;
   height: 32px;
@@ -732,27 +730,28 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-.login .login-inputs .password-box i {
+.login-inputs .password-box i {
   position: absolute;
   top: 11px;
   left: 5px;
   /* 在input中加入Fontawesome icon end*/
 }
-.login .input-buttons {
+
+.input-buttons {
   display: flex;
   justify-content: space-between;
 }
-.login .input-buttons button {
+.input-buttons button {
   width: 125px;
   height: 32px;
   color: white;
   border-radius: 5px;
 }
-.login .input-buttons .to-register {
+.input-buttons .to-register {
   border: 1px solid rgb(155, 151, 150);
   background-color: rgb(155, 151, 150);
 }
-.login .input-buttons .submit {
+.input-buttons .submit {
   border: 1px solid rgb(243, 108, 49);
   background-color: rgb(243, 108, 49);
 }
@@ -763,56 +762,58 @@ table {
   max-width: 620px;
   margin: 50px auto;
 }
-.register .title {
+
+.title-register {
   text-align: center;
   border-bottom: 3px solid rgb(243, 108, 49);
 }
-.register .title h2 {
+.title-register h2 {
   font-size: 3em;
   font-weight: 500;
   font-family: "Noto Sans TC";
   margin-bottom: 5px;
 }
-.register .title h3 {
+.title-register h3 {
   font-size: 1.25em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 35px;
 }
-.register .container {
+
+.container-register {
   padding: 15px;
   box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
 }
-.register .container .got-account {
+.container-register .got-account {
   margin-top: 5px;
   margin-bottom: 30px;
   font-size: 0.85em;
   color: rgb(243, 108, 49);
   font-weight: 300;
 }
-.register .container h4 {
+.container-register h4 {
   text-align: center;
   font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 16px;
 }
-.register .container h5 {
+.container-register h5 {
   font-size: 1.125em;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.register .content {
+.container-register .content {
   display: flex;
 }
-.register .content .sub-content {
+.container-register .content .sub-content {
   width: 50%;
 }
-.register .login-inputs .mail-box {
+.container-register .login-inputs .mail-box {
   /* 在input中加入Fontawesome icon start*/
   position: relative;
   margin-bottom: 15px;
 }
-.register .login-inputs .mail-box input {
+.container-register .login-inputs .mail-box input {
   display: block;
   text-indent: 20px;
   width: 100%;
@@ -821,15 +822,15 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-.register .login-inputs .mail-box i {
+.container-register .login-inputs .mail-box i {
   position: absolute;
   top: 8px;
   left: 5px;
 }
-.register .login-inputs .password-box {
+.container-register .login-inputs .password-box {
   position: relative;
 }
-.register .login-inputs .password-box input {
+.container-register .login-inputs .password-box input {
   display: block;
   text-indent: 20px;
   width: 100%;
@@ -838,21 +839,18 @@ table {
   border-radius: 5px;
   border: 1px solid gray;
 }
-.register .login-inputs .password-box i {
+.container-register .login-inputs .password-box i {
   position: absolute;
   top: 7px;
   left: 5px;
 }
-.register .login-inputs .password-box .icon2 {
+.container-register .login-inputs .password-box .icon2 {
   position: absolute;
   top: 42px;
   left: 5px;
   /* 在input中加入Fontawesome icon end*/
 }
-.register .input-buttons {
-  float: right;
-}
-.register .input-buttons .register-btn {
+.container-register .input-buttons .register-btn {
   width: 125px;
   height: 32px;
   color: white;
@@ -860,15 +858,16 @@ table {
   border: 1px solid rgb(243, 108, 49);
   background-color: rgb(243, 108, 49);
 }
-.register .input-buttons .register-btn a {
+.container-register .input-buttons .register-btn a {
   display: inline-block;
 }
+
 @media (max-width: 430px) {
-  .register .title {
+  .register .title-register {
     margin: 0 auto;
     max-width: 320px;
   }
-  .register .container {
+  .register .container-register {
     margin: 0 auto;
     max-width: 320px;
   }
@@ -880,7 +879,6 @@ table {
     margin-bottom: 20px;
   }
 }
-
 /* Page4 register end */
 /* 取消@import導入字型（改在head中用link導入，加速css載入速度）
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap'); *//*# sourceMappingURL=all.css.map */

@@ -2,23 +2,24 @@
 .login{
     width: 300px;
     margin: 50px auto;
-    .title{
-        text-align: center;
-        border-bottom: 3px solid rgb(243, 108, 49);
-        h2{
-            font-size: 3em;
-            font-weight: 500;
-            font-family: "Noto Sans TC", sans-serif;
-            margin-bottom: 5px;
-        }
-        h3{
-            font-size: 1.25em;
-            font-weight: 400;
-            font-family: "Noto Sans TC", sans-serif;
-            margin-bottom: 35px;
-        }
+}
+.title{
+    text-align: center;
+    border-bottom: 3px solid rgb(243, 108, 49);
+    h2{
+        font-size: 3em;
+        font-weight: 500;
+        font-family: "Noto Sans TC", sans-serif;
+        margin-bottom: 5px;
     }
-    .login-inputs{
+    h3{
+        font-size: 1.25em;
+        font-weight: 400;
+        font-family: "Noto Sans TC", sans-serif;
+        margin-bottom: 35px;
+    }
+}
+.login-inputs{
         padding: 15px;
         box-shadow: 5px 5px 7px hsla(0, 0%, 0%, 0.2);
         .forgot-password{
@@ -69,8 +70,8 @@
                 /* 在input中加入Fontawesome icon end*/
             }
         }
-    }
-    .input-buttons{
+}
+.input-buttons{
         display: flex;
         justify-content: space-between;
         button{
@@ -87,6 +88,5 @@
             border: 1px solid rgb(243, 108, 49);
             background-color: rgb(243, 108, 49);
         }
-    }
 }
 /* Page3 login end */

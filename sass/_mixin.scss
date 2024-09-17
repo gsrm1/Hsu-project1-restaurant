@@ -190,27 +190,28 @@
 
 @mixin register-iphone14ProMax{
     @media (max-width: 430px) {
-        .title{
-            margin: 0 auto;
-            max-width: 320px;
-        }
-        .container{
-            margin: 0 auto;
-            max-width: 320px;
-        }
-        .content{
-            flex-direction: column;
-        }
-        .content{
-            .sub-content{
-                width: 100%;
-                margin-bottom: 20px;
+        .register{
+            .title-register{
+                margin: 0 auto;
+                max-width: 320px;
             }
-        } 
-    @content
+            .container-register{
+                margin: 0 auto;
+                max-width: 320px;
+            }
+            .content{
+                flex-direction: column;
+            }
+            .content{
+                .sub-content{
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            } 
+        @content
+        }
     }
-
-}
+};
 
 
 
